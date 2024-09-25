@@ -1,0 +1,103 @@
+[
+    {
+        "title": "Products",
+        "menuItems": ["Startup Package", "Compliance Management Suite", "Human Resourse Suite", "Turnkey Projects"]
+    },
+    {
+        "title": "Services",
+        "menuItems": [
+            {
+            "title": "Registration",
+            "menuItems": [
+                "Shop/Proprietorship Registration",
+                "Partnership Registration",
+                {
+                    "title":"Company Incorporation",
+                    "menuItems": ["One Person Company", "Public Limited Company","Private Limited Company", "Nidhi Limited Company", "Farmers Producer Company", "Section-8 (NGO)", "Subsidiary Company", "UAE Company"]
+                },
+                "Limited Liability Partnership (LLP)",
+                {
+                    "title": "Non Profitable Organization",
+                    "menuItems": ["Society","Trusts"]
+                },
+                "Startup India Registration"
+            ]
+            },
+            {
+            "title": "Compliance",
+            "menuItems": [
+                {
+                    "title": "Corporate",
+                    "menuItems": ["Annual MCA Return Filing", "Income Tax Compliances","Statutory Audit", "Annual RoC Filings", "Directors’ Report", "DIR-3 KYC"]
+                },
+                {
+                    "title": "Non Corporate",
+                    "menuItems": ["NGO Compliance", "Partnership Compliance", "FSSAI Compliance", "ESIC & EPFO Complaince"]
+                }
+            ]
+            },
+            {
+            "title": "Taxation",
+            "menuItems": [
+                {
+                    "title": "Income Tax",
+                    "menuItems": [
+                        "ITR-1" , "ITR-2", "ITR-3", "ITR-4", "ITR-5", "ITR-6", "ITR-7", "Tax Deducted at Source", "Tan Collected at Source", "80G & 12A Registration", "Tax Notice", "Appeal & Revision"
+                    ]
+                },
+                {
+                    "title": "Goods and Service Tax",
+                    "menuItems": ["GST Registration", "GST Return Filling", "GST Annual Return", "Tax Input Credit"]
+                },
+                "Custom Tax",
+                "Unidirectional Air Flow Tax"
+            ]
+            },
+            {
+            "title": "Intellectual Property",
+            "menuItems": ["Trademark Registartion", "Patent Registration", "Copyright Registration"]
+            },
+            {
+            "title": "Licenses & Others",
+            "menuItems": [
+                {
+                    "title": "FSSAI",
+                    "menuItems": ["Registration", "State Licence", "Central Licence"]
+                },
+                "PF Registration",
+                "ESIC Registration",
+                "MSME / Udyami Registration",
+                "Professional Tax",
+                "PSARA License",
+                "Construction License",
+                "Drug License",
+                "Digital Signature",
+                "Mutual Funds",
+                "Insurance",
+                "Open Corporate Bank Account"
+            ]
+            }
+        ]
+    },
+    {
+        "title": "Resources",
+        "menuItems": [
+            {
+            "title": "Tools",
+            "menuItems": ["EMI Calculator", "SIP Calculator", "Income Tax Calculator", "PPF Calculator", "HRA Calculator", "Gratuity Calculator", "Postoffice Scheme","zero coupon bond"]
+            },
+            {
+            "title": "Templates",
+            "menuItems": ["Rent Agreement", "Salary Slip","Board Resulation for GST Application", "Power of Attorney", "Agenda", "Partnership Agreement", "Employee Agreement", "Invoice"]
+            },
+            {
+            "title": "Knowledge",
+            "menuItems": ["Blogs", "Case Studies", "FAQ"]
+            }
+        ]
+    },
+    {
+        "title": "Company",
+        "menuItems": ["About", "Career", "Contact", "Achievements"]
+    }
+]

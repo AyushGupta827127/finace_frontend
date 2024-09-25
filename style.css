@@ -1,0 +1,288 @@
+::selection {
+    background: #3b82f6; /* Background color of the selected text */
+    color: white; /* Text color of the selected text */
+}
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles here */
+}
+
+
+/* Add thin scrollbar */
+
+.base-btn {
+  background: linear-gradient(90deg,#f97316 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: right; /* changed from left to right */
+  color: #f97316;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 2px; /* rounded-sm */
+  font-size: 17px; /* font-base */
+  transition: background-position 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f97316; /* initial border color */
+}
+
+.base-btn:hover {
+  background-position: left; /* changed from right to left */
+  background-color: #f97316; /* orange-500 text */
+  color: white; /* white text */
+  border-color: #f97316; /* orange-500 border */
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #ffffff 50%, #f97316 50%);
+  background-size: 200% 100%;
+  background-position: right; /* Start with the white background */
+  color: white; /* White text color initially */
+  padding: 0.5rem; /* p-2 */
+  border-radius: 2px; /* rounded-sm */
+  font-size: 17px; /* font-base */
+  transition: background-position 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border: 1px solid #f97316; /* Orange border initially */
+}
+
+.primary-btn:hover {
+  background-position: left; /* Move to orange background on hover */
+  color: #f97316; /* orange text on hover */
+  border-color: #f97316; /* Keep orange border */
+}
+
+.primary-btn::after {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '\2B62'; /* Unicode for arrow */
+  font-size: 24px;
+  padding: 0.1rem;
+  margin-left: 20px;
+  transition: filter 0.1s ease; /* Smooth transition for filter */
+}
+
+.primary-btn:hover::after {
+  border: 1px solid #f97316; /* Change border color to orange-500 */
+}
+
+.secondary-btn {
+  background: linear-gradient(90deg, white 50%, #172554 50%);
+  background-size: 200% 100%;
+  background-position: right; /* Start with the deep blue background */
+  color: #fff; /* Deep blue text color initially */
+  padding: 0.5rem; /* p-2 */
+  border-radius: 2px; /* rounded-sm */
+  font-size: 17px; /* font-base */
+  transition: background-position 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border: 1px solid #172554; /* White border initially */
+}
+
+.secondary-btn:hover {
+  background-position: left; /* Move to deep blue background on hover */
+  color: #172554 ; /* white text on hover */
+  border-color: #172554; /* Deep blue border */
+}
+
+.secondary-btn::after {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white; /* Deep blue border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '\2B62'; /* Unicode for arrow */
+  font-size: 24px;
+  padding: 0.1rem;
+  margin-left: 20px;
+  transition: filter 0.1s ease; /* Smooth transition for filter */
+}
+
+.secondary-btn:hover::after {
+  border: 1px solid #172554; /* white border */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* slightly enlarges the button */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #ffedd5; /* Hexagon background color (orange) */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%, 60% 42%, 0% 42%);
+  transform: rotate(0deg); /* Rotating to give the right-angled effect */
+  animation: slide-up-down 4s infinite; /* Apply the animation */
+}
+.cornerr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #ffedd5; /* Hexagon background color (orange) */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%, 60% 42%, 0% 42%);
+  transform: rotate(0deg); /* Rotating to give the right-angled effect */
+}
+/* Keyframes for sliding up and down */
+@keyframes slide-up-down {
+  0% {
+    top: -70px; /* Start above the screen */
+  }
+  50% {
+    top: 0; /* Slide down into position */
+  }
+  100% {
+    top: -70px; /* Slide back up */
+  }
+}
+
+
+/* Add thin scrollbar */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #D1D5DB; /* Color of the thumb */
+  border-radius: 10px; /* Roundness of the thumb */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF; /* Color of the thumb when hovered */
+}
+
+ /* Input field of all Calculator  */
+ .result {
+  width: 580px;
+}
+
+@media screen and (max-width: 960px) {
+  .result {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) and (min-width: 360px) {
+  .result {
+    width: 355px;
+  }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0px;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: #9ca3af; /* Tailwind gray-400 */
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  top: -15px;
+  background: transparent;
+  padding: 0 0px;
+  color: gray;
+  font-size: 1rem;
+}
+
+
+/* title header */
+
+.headerTitle {
+    padding-left: 0.5rem; /* Tailwind's `pl-2` */
+    border-width: 3px; /* Tailwind's `border-2` */
+    border-top-width: 0; /* Tailwind's `border-y-0` (top) */
+    border-bottom-width: 0; /* Tailwind's `border-y-0` (bottom) */
+    border-right-width: 0; /* Tailwind's `border-r-0` */
+    border-left-color: #f97316; /* Tailwind's `border-l-orange-500` */
+    color: #1e3a8a; /* Tailwind's `text-blue-950` */
+  }
+
+
+  /* Outline Btn */
+
+  .outline-btn {
+    border-width: 2px; /* Tailwind's `border-2` */
+    border-color: #6b7280; /* Tailwind's `border-gray-500` */
+    color: #6b7280; /* Tailwind's `text-gray-500` */
+    font-weight: bold; /* Tailwind's `font-bold` */
+    border-radius: 0.5rem; /* Tailwind's `rounded-lg` */
+    background-color: transparent; /* Default background for an outline button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  .outline-btn:hover {
+    background-color: #f3f4f6; /* Tailwind's `hover:bg-gray-100` */
+  }
+
+
+/* Calculators Responsiveness */
+
+@media (min-width: 768px) and (max-width: 910px) {
+  .calculator {
+    width: 26rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 678px) {
+  .calculator {
+    width: auto;
+  }
+}
+
+@media (min-width: 378px) and (max-width: 450px) {
+    .calculator {
+      width: 20rem;
+      padding: 20px 0px 8px 0px ;
+  }
+}
+
+.border-right-shadow {
+  position: relative;
+}
+
+.border-right-shadow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px; /* adjust the border width */
+  background-color: orange; /* adjust the border color */
+  box-shadow: 3px 4px 10px rgba(17, 17, 17, 0.3); /* adjust the shadow */
+}
