@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  server: {
+    host: '0.0.0.0', // default: localhost
+    port: 3000 // or any port number you prefer
+  },
   app: {
     head: {
       htmlAttrs: { lang: 'fa' },
